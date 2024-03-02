@@ -33,14 +33,6 @@
   public *;
 }
 
-#butterknife
--keep public class * implements butterknife.Unbinder { public <init>(**, android.view.View); }
--keep class butterknife.*
--keepclasseswithmembernames class * { @butterknife.* <methods>; }
--keepclasseswithmembernames class * { @butterknife.* <fields>; }
--keepclassmembers class * { @butterknife.* <methods>; }
--keepclassmembers class * { @butterknife.* <fields>; }
-
 #gsyvideoplayer
 -keep class com.shuyu.gsyvideoplayer.video.** { *; }
 -dontwarn com.shuyu.gsyvideoplayer.video.**

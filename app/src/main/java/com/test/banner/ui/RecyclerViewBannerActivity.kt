@@ -1,31 +1,22 @@
-package com.test.banner.ui;
+package com.test.banner.ui
 
-import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.test.banner.adapter.MyRecyclerViewAdapter
+import com.test.banner.databinding.ActivityRecyclerviewBannerBinding
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+class RecyclerViewBannerActivity : AppCompatActivity() {
 
-import com.test.banner.R;
-import com.test.banner.adapter.MyRecyclerViewAdapter;
+    private lateinit var binding: ActivityRecyclerviewBannerBinding
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityRecyclerviewBannerBinding.inflate(layoutInflater).also {
+            setContentView(it.root)
+        }
 
-public class RecyclerViewBannerActivity extends AppCompatActivity {
-    @BindView(R.id.net_rv)
-    RecyclerView recyclerView;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recyclerview_banner);
-        ButterKnife.bind(this);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new MyRecyclerViewAdapter(this));
+        binding.netRv.layoutManager = LinearLayoutManager(this)
+        binding.netRv.adapter = MyRecyclerViewAdapter(this)
     }
-
 }

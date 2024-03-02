@@ -26,7 +26,8 @@ class VideoActivity : AppCompatActivity() {
             setContentView(it.root)
         }
         binding.banner.addBannerLifecycleObserver(this)
-            .setAdapter(MultipleTypesAdapter(this, DataBean.getTestDataVideo()))
+//            .setAdapter(MultipleTypesAdapter(this, DataBean.getTestDataVideo()))
+            .setAdapter(MultipleTypesAdapter(this, DataBean.getVideos()))
             .setIndicator(NumIndicator(this))
             .setIndicatorGravity(IndicatorConfig.Direction.RIGHT)
             .addOnPageChangeListener(object : OnPageChangeListener {

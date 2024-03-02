@@ -51,7 +51,8 @@ public class DataBean {
      */
     public static List<DataBean> getTestDataVideo() {
         List<DataBean> list = new ArrayList<>();
-        list.add(new DataBean("http://vfx.mtime.cn/Video/2019/03/09/mp4/190309153658147087.mp4", "第一个放视频", 2));
+        //list.add(new DataBean("http://vfx.mtime.cn/Video/2019/03/09/mp4/190309153658147087.mp4", "第一个放视频", 2));
+        list.add(new DataBean("https://vfx.mtime.cn/Video/2024/02/10/mp4/240210084806173124.mp4", "第一个放视频", 2));
         list.add(new DataBean(R.drawable.image7, "听风.赏雨", 1));
         list.add(new DataBean(R.drawable.image8, "迪丽热巴.迪力木拉提", 1));
         list.add(new DataBean(R.drawable.image9, "爱美.人间有之", 1));
@@ -72,12 +73,18 @@ public class DataBean {
 
     public static List<DataBean> getVideos() {
         List<DataBean> list = new ArrayList<>();
-        list.add(new DataBean("http://vfx.mtime.cn/Video/2019/03/21/mp4/190321153853126488.mp4", null, 0));
-        list.add(new DataBean("http://vfx.mtime.cn/Video/2019/03/18/mp4/190318231014076505.mp4", null, 0));
-        list.add(new DataBean("http://vfx.mtime.cn/Video/2019/03/18/mp4/190318214226685784.mp4", null, 0));
-        list.add(new DataBean("http://vfx.mtime.cn/Video/2019/03/19/mp4/190319125415785691.mp4", null, 0));
-        list.add(new DataBean("http://vfx.mtime.cn/Video/2019/03/14/mp4/190314223540373995.mp4", null, 0));
-        list.add(new DataBean("http://vfx.mtime.cn/Video/2019/03/14/mp4/190314102306987969.mp4", null, 0));
+        list.add(new DataBean("https://vfx.mtime.cn/Video/2024/02/10/mp4/240210084806173124.mp4", "第一个放视频", 2));
+        list.add(new DataBean("https://vfx.mtime.cn/Video/2024/02/05/mp4/240205145500032175.mp4", "视频一", 2));
+        list.add(new DataBean("https://vfx.mtime.cn/Video/2024/02/10/mp4/240210084806173124.mp4", "视频二", 2));
+        list.add(new DataBean("https://vfx.mtime.cn/Video/2024/02/26/mp4/240226131921881164.mp4", "视频三", 2));
+        list.add(new DataBean("https://vfx.mtime.cn/Video/2024/01/26/mp4/240126112430554170.mp4", "视频四", 2));
+        list.add(new DataBean("https://vfx.mtime.cn/Video/2024/02/14/mp4/240214121148444197.mp4", "视频五", 2));
+        list.add(new DataBean("https://vfx.mtime.cn/Video/2023/11/12/mp4/231112125128439165.mp4", "视频六", 2));
+        list.add(new DataBean(R.drawable.image7, "听风.赏雨", 1));
+        list.add(new DataBean(R.drawable.image8, "迪丽热巴.迪力木拉提", 1));
+        list.add(new DataBean(R.drawable.image9, "爱美.人间有之", 1));
+        list.add(new DataBean(R.drawable.image10, "洋洋洋.气质篇", 1));
+        list.add(new DataBean(R.drawable.image11, "生活的态度", 1));
         return list;
     }
 
